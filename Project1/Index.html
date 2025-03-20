@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Logo Navbar & Sliders</title>
+ <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Swiper.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <!-- Bootstrap Icons CDN -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<!-- Custom CSS -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="slider-container">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid custom-container">
+    
+            <!-- Left Section: Search Icon + Menu -->
+            <div class="left-section">
+                <i class="bi bi-search search-icon me-3"></i> <!-- Search Icon -->
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
+                </ul>
+                
+            </div>
+    
+            <!-- Center Section: Logo -->
+            <div class="center-section">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.thewadhwagroup.com/wp-content/uploads/2025/02/TWG-LOGO-white.png" alt="Logo">
+                </a>
+            </div>
+    
+            <!-- Right Section: Menu + WhatsApp + Hamburger -->
+            <div class="right-section">
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Residential</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Commercial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Township</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Redevelopment</a></li>
+                </ul>
+                <i class="bi bi-whatsapp whatsapp-icon"></i> <!-- WhatsApp Icon -->
+                <button class="navbar-toggler hamburger-icon d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+    
+        </div>
+    
+        <!-- Offcanvas Menu (Only for Mobile) -->
+        <div class="offcanvas offcanvas-end d-lg-none" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Residential</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Commercial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Township</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Redevelopment</a></li>
+                </ul>
+            </div>  
+        </div>
+    
+    </nav>
+    <!-- Left Side Navigation -->
+    <div class="left-nav">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+    </div>
+
+    <!-- Main Slider -->
+    <div class="main-slider swiper mySwiper">
+        <div class="main_text">
+            <h1>Landmarks Planned With Passion</h1>
+            <p>Transforming Mumbai's Skyline <br> Since 1969</p>
+        </div>
+        <div class="swiper-wrapper">
+           
+         
+            <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1734543942868-2470c4cba7b5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></div>
+            <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1734543942868-2470c4cba7b5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2"></div>
+            <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1734543942868-2470c4cba7b5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3"></div>
+        </div>
+    </div>
+
+    <!-- Right Side Slider -->
+    <div class="right-slider">
+        <div class="slide active"><img src="https://www.thewadhwagroup.com/wp-content/uploads/2021/07/home-banner4-a.png" alt="Right 1"></div>
+        <div class="slide"><img src="https://www.thewadhwagroup.com/wp-content/uploads/2021/07/home-banner2-a.png" alt="Right 2"></div>
+        <div class="slide"><img src="https://www.thewadhwagroup.com/wp-content/uploads/2021/07/home-banner3-a.png" alt="Right 3"></div>
+    </div>
+</div>
+<div class="container about-section">
+    <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-lg-6">
+            <div class="about-text">
+                <h2>A Brief About Us</h2>
+                <p><strong>The Wadhwa Group</strong> carries a rich legacy of 5+ Decades built on trust and belief of our customers and stakeholders. The group is one of Mumbai’s leading real estate companies with 250+ Landmarks and is currently developing residential, commercial, and township projects spread across approximately 4.1 Million Sq.M.</p>
+                <p>Timely completion of projects, coupled with strong planning and design innovation, gives the group an edge over its competitors. As an organization, the group is also known for its employee-friendly and professional working environment.</p>
+            </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-lg-6">
+            <div class="image-stack">
+                <img src="img/home-about1.jpg" alt="Office Interior" class="img-fluid">
+                <img src="img/platina.jpg" alt="Building" class="img-fluid img-front">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid stats-section">
+  <div class="row text-center">
+    <div class="col-12 col-md-6">
+      <div class="stat-box">
+          <div class="icon">📅</div>
+          <h3>5+</h3>
+          <p>Decades of Experience</p>
+      </div>
+  </div>
+
+  <!-- Stat 2 -->
+  <div class="col-12 col-md-6">
+      <div class="stat-box">
+          <div class="icon">🏢</div>
+          <h3>4.1</h3>
+          <p>Million Sq.M. Developed</p>
+      </div>
+  </div>
+
+  <!-- Stat 3 -->
+  <div class="col-12 col-md-6">
+      <div class="stat-box">
+          <div class="icon">🌟</div>
+          <h3>35000+</h3>
+          <p>Delighted Customers</p>
+      </div>
+  </div>
+
+  <!-- Stat 4 -->
+  <div class="col-12 col-md-6">
+      <div class="stat-box">
+          <div class="icon">🏗️</div>
+          <h3>250+</h3>
+          <p>Landmarks Created</p>
+      </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="stat-box">
+        <div class="icon">🔑</div>
+        <h3>35000+</h3>
+        <p>Delighted Customers</p>
+    </div>
+</div>
+
+<!-- Stat 2 -->
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="stat-box">
+        <div class="icon">👥</div>
+        <h3>150+</h3>
+        <p>MNC Clients</p>
+    </div>
+</div>
+
+<!-- Stat 3 -->
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="stat-box">
+        <div class="icon">🏢</div>
+        <h3>250+</h3>
+        <p>Landmarks Created</p>
+    </div>
+</div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+      <!-- Left Column (Image) -->
+      <div class="col-md-6 p-0 left-column">
+          <img src="https://www.thewadhwagroup.com/wp-content/uploads/2024/09/index-image.jpg" alt="Building">
+      </div>
+
+      <!-- Right Column (Text Content) -->
+      <div class="col-md-6 right-column">
+          <h3>WE DESIGN YOUR WORLD WITH OUR HEARTS</h3>
+          <p class="text-muted">SETTING A STRONG FOUNDATION FOR YOU</p>
+          <ul>
+              <li>Impeccable project execution</li>
+              <li>Transparency in dealings</li>
+              <li>Litigation-free projects</li>
+              <li>Strong brand presence & delivery excellence</li>
+              <li>Design innovation with emphasis on practicality</li>
+          </ul>
+          <ul>
+            <li>Impeccable project execution</li>
+            <li>Transparency in dealings</li>
+            <li>Litigation-free projects</li>
+            <li>Strong brand presence & delivery excellence</li>
+            <li>Design innovation with emphasis on practicality</li>
+        </ul>
+          <img src="https://www.thewadhwagroup.com/wp-content/uploads/2021/05/cement-texture.jpg" class="ventilit-logo" alt="Ventilit Logo">
+      </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS & Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+  <script src="script.js"></script>
+</body>
+</html>
